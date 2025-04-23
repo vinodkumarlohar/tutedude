@@ -1,0 +1,13 @@
+def factorial(n):
+#This function takes a number n and returns its factorial using a loop.
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Call the factorial function with a sample number
+sample_number = 5
+result = factorial(sample_number)
+
+# Print the output
+print(f"The factorial of {sample_number} is factorial {result}")
