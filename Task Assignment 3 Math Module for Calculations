@@ -1,0 +1,24 @@
+import math
+
+# Take user input for the number
+try:
+    number = float(input("Enter a number: "))
+
+    if number <= 0:
+        print("Natural logarithm is not defined for non-positive numbers.")
+    else:
+        # Calculate the square root of the number
+        sqrt_result = math.sqrt(number)
+
+        # Calculate the natural logarithm (log base e) of the number
+        log_result = math.log(number)
+
+        # Calculate the sine of the number (in radians)
+        sine_result = math.sin(number)
+
+        # Display the calculated results
+        print(f"Square root {number}: {sqrt_result}")
+        print(f"logarithm {number}: {log_result}")
+        print(f"Sine : {sine_result}")
+except ValueError:
+    print("Please enter a valid number.")
