@@ -1,0 +1,18 @@
+#write the content into the my_file.txt
+file_name = 'simple.txt'
+def write_file(file_name, data):
+    with open(file_name, 'w') as file:
+        file.write(data + '\n')
+def append_file(file_name, data):
+    with open(file_name, 'a') as file:
+        file.write(data + '\n')
+def read_file(file_name, data):
+    with open(file_name, 'r') as file:
+        content = file.read()
+        file.write(data + '\n')
+
+user_input = input("Enter data to write")
+write_file(file_name, user_input)
+additional_data = input('Enter additional data')
+append_file(file_name, additional_data)
+print('final content of the file')
